@@ -202,7 +202,7 @@ def signal_handle(signum, frame):
     dump_animeinfo()
     exit(0)
 
-fn = 'page.html' # input('Enter .html filename: ')
+fn = input('Enter .html filename: ')
 with open(fn, 'r', encoding='utf-8') as f:
     w = pq(f.read())
 
